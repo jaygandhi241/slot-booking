@@ -3,7 +3,6 @@ const Booking = require('../models/Booking');
 const User = require('../models/User');
 const { getSlots } = require('../utils/slots');
 
-// GET /admin/slots
 const getSlotsForUser = async (req, res) => {
   try {
     const { date } = req.query;
@@ -45,7 +44,6 @@ const getSlotsForUser = async (req, res) => {
   }
 };
 
-// POST /admin/book
 const bookSlotForUser = async (req, res) => {
   try {
     const { userId, date, startTime } = req.body;

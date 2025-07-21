@@ -7,7 +7,7 @@ app.use(express.json());
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
-// MongoDB connection
+//mongo connection
 connectDB();
 
 app.use('/auth', require('./routes/auth'));

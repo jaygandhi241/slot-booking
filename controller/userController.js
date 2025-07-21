@@ -1,6 +1,5 @@
 const Availability = require('../models/Availability');
 
-// POST /user/availability
 const addAvailability = async (req, res) => {
   try {
     const { date, startTime, endTime } = req.body;
@@ -30,7 +29,7 @@ const addAvailability = async (req, res) => {
       startTime,
       endTime
     });
-    
+
     await availability.save();
     res.status(201).json({ message: 'Availability added', availability });
   } catch (err) {
