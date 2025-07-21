@@ -5,6 +5,6 @@ JWT_SECRET=devstreepracticaltask
 PORT=8000
 
 INSTALL& RUN PACKAGES - 
-npm i 
+npm i &
 npm run start
 
